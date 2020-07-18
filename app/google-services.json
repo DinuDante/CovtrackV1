@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "684754535109",
+    "firebase_url": "https://covtrackv1.firebaseio.com",
+    "project_id": "covtrackv1",
+    "storage_bucket": "covtrackv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684754535109:android:5131df07578e9dbd9d26ac",
+        "android_client_info": {
+          "package_name": "com.example.covtrack_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684754535109-r4r0ks7adqb6kq4tbsnbp1mpp7g9abrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.covtrack_v1",
+            "certificate_hash": "4f39d8537d7d7d04e9f8738b13724aa0dce8d49b"
+          }
+        },
+        {
+          "client_id": "684754535109-u7jvijcog3cc10rj3kc25ib0ofsob0pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkL8AADiSWCnArxSnSImwMpnpHhbBq1j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684754535109-u7jvijcog3cc10rj3kc25ib0ofsob0pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
