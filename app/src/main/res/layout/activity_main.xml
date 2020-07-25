@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@android:color/background_light"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="540dp"
-        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:paddingHorizontal="10dp"
         android:text="Already Registered? >> Login"
-        android:textColor="#4BDF15"
+        android:textColor="?attr/colorPrimary"
         android:textSize="17dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="600dp"
-        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:layout_marginBottom="81dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:paddingHorizontal="10dp"
         android:text="Not Registered? >> Signup"
-        android:textColor="#4BDF15"
+        android:textColor="@color/colorPrimary"
         android:textSize="17dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/admin"
@@ -39,10 +48,30 @@
         android:layout_height="50dp"
         android:layout_marginLeft="320dp"
         android:layout_marginTop="10dp"
-        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:layout_marginBottom="25dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:paddingHorizontal="10dp"
         android:text="Admin?"
-        android:textColor="#4BDF15" />
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="239dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin"
+        app:srcCompat="@drawable/safe" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

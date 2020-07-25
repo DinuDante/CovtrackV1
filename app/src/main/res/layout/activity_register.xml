@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
     tools:context=".RegisterActivity">
 
     <EditText
@@ -12,75 +13,100 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="6dp"
         android:ems="10"
         android:hint="Enter Name"
         android:inputType="text|textPersonName"
         android:padding="20dp"
-        android:textColorHint="#4ED21A"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rphno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/rphno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rname"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="7dp"
         android:ems="10"
         android:hint="Enter Phone Number"
         android:inputType="phone|number"
         android:padding="20dp"
-        android:textColor="#49E10F"
-        android:textColorHint="#4ED21A"
-        android:textSize="25dp" />
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rpswd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rname" />
 
     <EditText
         android:id="@+id/rpswd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rphno"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Enter New Password"
         android:inputType="textPassword"
         android:padding="20dp"
-        android:textColor="#49E10F"
-        android:textColorHint="#4ED21A"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rcpswd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rphno" />
 
     <EditText
         android:id="@+id/rcpswd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rpswd"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="Confirm New Password"
         android:inputType="textPassword"
         android:padding="20dp"
-        android:textColor="#49E10F"
-        android:textColorHint="#4ED21A"
-        android:textSize="25dp" />
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/regdbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpswd" />
 
     <Button
         android:id="@+id/regdbtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
-        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="331dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:paddingHorizontal="10dp"
         android:text="Create Account"
-        android:textColor="#4BDF15"
+        android:textColor="@android:color/tertiary_text_light"
         android:textSize="25dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
