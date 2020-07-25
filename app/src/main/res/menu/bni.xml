@@ -3,17 +3,22 @@
 
     <item
         android:id="@+id/item1"
-        android:icon="@drawable/safe"
-        android:title="t1" />
+        android:icon="@drawable/person"
+        android:title="Myself" />
 
     <item
         android:id="@+id/item2"
-        android:icon="@drawable/logo_cut"
-        android:title="t2" />
+        android:icon="@drawable/analytics"
+        android:title="Status" />
 
     <item
         android:id="@+id/item3"
-        android:icon="@drawable/safe2"
-        android:title="t3" />
+        android:icon="@drawable/safe3"
+        android:title="Safety" />
+
+    <item
+        android:id="@+id/item4"
+        android:icon="@drawable/dash2"
+        android:title="Dashboard" />
 
 </menu>

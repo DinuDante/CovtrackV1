@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Covtrack V1</string>
+    <string name="title_activity_scrolling1">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+"1. Andhra Pradesh (4)\n"
+"- Sri Venkateswara Institute of Medical Sciences, Tirupati\n"
+"- Rangaraya Medical College, Kakinada\n"
+"- Sidhartha Medical College, Vijaywada\n"
+"- Govt. Medical College, Ananthpur\n\n"
+
+"2. Assam (5)\n"
+"- Gauhati Medical College, Guwahati\n"
+"- Regional Medical Research Center, Dibrugarh\n"
+"- Jorhat Medical College, Jorhat\n"
+"- Silchar Medical College, Silchar\n"
+"- Fakkhruddin Ali Ahmed Medical College, Barpeta\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>

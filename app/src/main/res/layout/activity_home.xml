@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#000000"
-        app:itemIconTint="#FFFFFF"
-        app:itemTextColor="#FFFFFF"
-        app:menu="@menu/bni"/>
+        app:itemBackground="@color/mr_cast_meta_default_text_color"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/bni" />
+
 </RelativeLayout>
